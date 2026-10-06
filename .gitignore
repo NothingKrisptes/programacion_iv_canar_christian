@@ -1,0 +1,99 @@
+# =========================
+# Sistema Operativo y Editores
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+*.suo
+
+# =========================
+# Variables de Entorno y Secretos
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# =========================
+# Node.js y Ecosistema JavaScript/TypeScript
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+dist/
+coverage/
+.nyc_output/
+.serverless/
+.next/
+.nuxt/
+
+# =========================
+# React Native
+# =========================
+# Expo
+.expo/
+.expo-shared/
+# iOS
+ios/Pods/
+ios/build/
+ios/Index/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+# Android (RN)
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+
+# =========================
+# Kotlin / Android Nativo
+# =========================
+.gradle/
+build/
+!src/**/build/
+local.properties
+.cxx/
+captures/
+.externalNativeBuild/
+# Keystore de firmas (por seguridad)
+*.jks
+*.keystore
+
+# =========================
+# Dart y Flutter
+# =========================
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+flutter_export_environment.sh
+# Archivos autogenerados
+*.g.dart
+*.freezed.dart
+# Artefactos de compilación de iOS/Android en Flutter
+ios/Flutter/.last_build_id
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+android/app/src/main/assets/flutter_assets/
