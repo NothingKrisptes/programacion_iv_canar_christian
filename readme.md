@@ -1,8 +1,9 @@
 # Programación IV
 
-**Autor:** Christian Cañar
-**Materia:** Programación IV
-**Año/Semestre:** 2026
+**Autor:** Christian Cañar  
+**Materia:** Programación IV  
+**Año/Semestre:** 2026  
+
 ---
 
 ## 📱 Objetivo Principal
