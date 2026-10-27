@@ -1,0 +1,35 @@
+import { StyleSheet, Text, View } from 'react-native'
+
+export function Paso2ListaVacia() {
+  return (
+    <View style={styles2.vacio}>
+      <Text style={styles2.vacioTexto}>Sin servidores registrados</Text>
+      <Text style={styles2.vacioSub}>Agrega uno con el botón +</Text>
+    </View>
+  )
+}
+
+
+const styles2 = StyleSheet.create({
+  contenedor: { flex: 1, backgroundColor: '#f0f4f8' },
+  titulo: {
+    fontSize: 20,
+    fontWeight: '700',
+    padding: 16,
+    backgroundColor: '#1565c0',
+    color: '#fff',
+  },
+  separador: {
+    height: 1,
+    backgroundColor: '#e0e0e0',
+    marginHorizontal: 12,
+  },
+  vacio: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 40,
+  },
+  vacioTexto: { fontSize: 16, fontWeight: '600', color: '#555' },
+  vacioSub: { fontSize: 13, color: '#999', marginTop: 6 },
+})

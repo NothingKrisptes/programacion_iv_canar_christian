@@ -1,14 +1,15 @@
 // app/index.tsx — añade esto debajo de los estilos
-import { FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
+import { Paso1FilaServidor } from './paso1FilaServidor'
 
-type Servidor = {
+export type Servidor = {
   id: string
   nombre: string
   ip: string
   activo: boolean
 }
 
-const SERVIDORES: Servidor[] = [
+export const SERVIDORES: Servidor[] = [
   { id: '1', nombre: 'web-01',   ip: '10.0.2.10', activo: true  },
   { id: '2', nombre: 'web-02',   ip: '10.0.2.11', activo: true  },
   { id: '3', nombre: 'db-primario', ip: '10.0.3.20', activo: true  },
@@ -19,26 +20,7 @@ const SERVIDORES: Servidor[] = [
   { id: '8', nombre: 'bastion',     ip: '203.0.113.5', activo: true },
 ]
 
-function FilaServidor({ servidor }: { servidor: Servidor }) {
-  return (
-    <View style={styles1.fila}>
-      <View style={styles1.info}>
-        <Text style={styles1.nombre}>{servidor.nombre}</Text>
-        <Text style={styles1.ip}>{servidor.ip}</Text>
-      </View>
-      <View
-        style={[
-          styles1.estado,
-          servidor.activo ? styles1.estadoActivo : styles1.estadoInactivo,
-        ]}
-      >
-        <Text style={styles1.textoEstado}>
-          {servidor.activo ? 'ACTIVO' : 'CAÍDO'}
-        </Text>
-      </View>
-    </View>
-  )
-}
+
 
 export function Paso1() {
   return (
@@ -47,7 +29,7 @@ export function Paso1() {
       <FlatList<Servidor>
         data={SERVIDORES}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <FilaServidor servidor={item} />}
+        renderItem={({ item }) => <Paso1FilaServidor servidor={item} />}
       />
     </SafeAreaView>
   )
